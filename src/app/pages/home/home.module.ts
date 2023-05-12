@@ -3,11 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { ItqaanServiceCardComponent } from 'src/app/shared/components/itqaan-service-card/itqaan-service-card.component';
+import { FooterComponent } from 'src/app/shared/components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    ItqaanServiceCardComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
