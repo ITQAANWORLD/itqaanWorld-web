@@ -8,7 +8,44 @@
     alt="logo"
   />
 
-  <ul class="flex text-white justify-around uppercase">
+  <div class="block hover:cursor-pointer lg:hidden">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="white"
+      class="w-8 h-8"
+      [ngClass]="{ hidden: isMenuOpen }"
+      (click)="isMenuOpen = !isMenuOpen"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+      />
+    </svg>
+
+    <!-- close menu -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="white"
+      class="w-8 h-8"
+      [ngClass]="{ hidden: !isMenuOpen }"
+      (click)="isMenuOpen = !isMenuOpen"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  </div>
+
+  <ul class="hidden lg:flex text-white justify-around uppercase">
     <li class="border-r px-4 py-4 border-headerBorder">
       <a [routerLink]="'home'"> Home</a>
     </li>
@@ -71,3 +108,70 @@
     </li>
   </ul>
 </nav>
+
+<div class="bg-headerBlue" [ngClass]="{ hidden: !isMenuOpen }">
+  <ul
+    class="lg:hidden flex flex-col text-white justify-around uppercase text-center divide-y-2"
+  >
+    <li class="border-r px-4 py-4 border-headerBorder">
+      <a [routerLink]="'home'"> Home</a>
+    </li>
+    <li class="border-r px-4 py-4 border-headerBorder">
+      <a [routerLink]="'about'"> About</a>
+    </li>
+    <li class="border-r px-4 py-4 border-headerBorder">
+      <a class="peer hover:cursor-pointer"> Services </a>
+      <!-- the menu here -->
+      <div
+        class="hidden absolute mt-6 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
+      >
+        <a
+          *ngFor="let item of services"
+          [routerLink]="'services/' + item.route"
+          class="px-5 py-3 hover:bg-gray-200 capitalize"
+          href="#"
+          >{{ item.title }}</a
+        >
+      </div>
+    </li>
+    <li class="border-r px-4 py-4 border-headerBorder">
+      <a class="peer hover:cursor-pointer">QURAN & HADITH</a>
+      <!-- the menu here -->
+      <div
+        class="hidden absolute mt-6 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
+      >
+        <a
+          *ngFor="let item of quranHadith"
+          class="px-5 py-3 hover:bg-gray-200 capitalize"
+          href="#"
+          >{{ item }}</a
+        >
+      </div>
+    </li>
+    <li class="border-r px-4 py-4 border-headerBorder"><a> OUR TERMS</a></li>
+    <li class="border-r px-4 py-4 border-headerBorder"><a> FAQs</a></li>
+    <li class="border-r px-4 py-4 border-headerBorder"><a> SHOP</a></li>
+    <li class="border-r px-4 py-4 border-headerBorder"><a> CONTACT</a></li>
+    <li class="border-r px-4 py-4 border-headerBorder">
+      <a class="peer hover:cursor-pointer">SIGN-UP</a>
+      <!-- the menu here -->
+      <div
+        class="hidden absolute mt-6 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
+      >
+        <a class="px-5 py-3 hover:bg-gray-200 capitalize" href="#"
+          >my account</a
+        >
+      </div>
+    </li>
+    <li class="flex items-center">
+      <select
+        class="text-darkText px-4 py-2 mb-0 ml-0 block w-full rounded-sm bg-white focus:outline-none"
+      >
+        <option disabled selected>English</option>
+        <option>Swahili</option>
+        <option>German</option>
+        <option>French</option>
+      </select>
+    </li>
+  </ul>
+</div>

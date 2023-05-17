@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class NavbarComponent {
   @Input() scrolled: boolean = false;
+  isMenuOpen:boolean = false;
   
   services = [
     {title:'cash waqf',
