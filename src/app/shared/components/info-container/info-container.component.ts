@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   standalone:true,
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./info-container.component.scss']
 })
 export class InfoContainerComponent {
+  @Input() title: string = '';
+  @Input() description: string = '';
+  
 
 }

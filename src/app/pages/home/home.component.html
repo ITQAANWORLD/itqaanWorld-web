@@ -1,46 +1,62 @@
-<div>
-  <p>
-    Itqaan platform:"Perfecting your spiritual
-    <span class="font-bold"
-      >journey with precison, excellence and Sharia adherence."</span
-    >
+<!-- hero section -->
+<div
+  [style.background-image]="'url(../../../assets/imgs/Itqan-banner.png)'"
+  class="flex flex-col items-center justify-center p-10 min-h-[600px] w-screen py-32"
+>
+  <p class="text-4xl text-white font-bold w-[720px] text-center mb-12">
+    Itqaan platform:"Perfecting your spiritual journey with precison, excellence
+    and Sharia adherence."
   </p>
-  <div>
-    <img src="../../../assets/imgs/playstore-logo.png" alt="playstore" />
-    <img src="../../../assets/imgs/apple-logo.png" alt="apple" />
+  <div class="flex items-center justify-center mb-6">
+    <img
+      class="h-24"
+      src="../../../assets/imgs/playstore-logo.png"
+      alt="playstore"
+    />
+    <img class="h-16" src="../../../assets/imgs/apple-logo.png" alt="apple" />
   </div>
-  <img src="../../../assets/imgs/itqaan-Qr.jpg" alt="apple" />
+  <img
+    src="../../../assets/imgs/itqaan-Qr.jpg"
+    alt="itqaan qr"
+    class="w-20 h-20"
+  />
 </div>
 
-<div>
-  <h1>ABOUT ITQAAN</h1>
-  <p>
+<!-- About section -->
+<div class="bg-[#f0f1f3] py-28 text-center">
+  <h1 class="text-primaryBlue font-bold text-4xl mb-8">ABOUT ITQAAN</h1>
+  <p class="text-xl font-bold w-3/4 mx-auto">
     Itqaan.world Is an Ajr Islamic fintech app purposed to serve, educate
     ,eradicate poverty, scale awareness of Islamic best practice for the entire
     Ummah. Through a simplified daily digital journey.
   </p>
 </div>
 
-<div>
-  <h1>ITQAAN SERVICES</h1>
-  <div>
-    <img src="" alt="cashwaqf" />
-    <p>CASH WAQF</p>
+<div class="py-10">
+  <h1 class="text-center text-primaryBlue font-bold text-4xl mb-8">
+    ITQAAN SERVICES
+  </h1>
+  <div class="grid grid-cols-4 w-4/5 mx-auto place-items-center">
+    <ng-container *ngFor="let service of itqaanServices">
+      <app-itqaan-service-card
+        [img]="service.img"
+        [title]="service.title"
+      ></app-itqaan-service-card>
+    </ng-container>
   </div>
 </div>
 
-<div>
+<div class="text-center py-10">
   <div>
-    <h1>FREE</h1>
+    <h1 class="text-primaryBlue font-bold text-4xl mb-8">FREE</h1>
     <p>Quran & Hadith --</p>
   </div>
-  <div>
-    <img src="" alt="cashwaqf" />
-    <p>CASH WAQF</p>
-  </div>
-  <div>
-    <p>itqaan Clients and partners</p>
+  <app-itqaan-service-card></app-itqaan-service-card>
+
+  <div class="text-center py-12">
+    <h1 class="text-primaryBlue text-4xl mb-8">Itqaan Clients and partners</h1>
     <p>Our Partners</p>
   </div>
 </div>
+
 <app-footer></app-footer>

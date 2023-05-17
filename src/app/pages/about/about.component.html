@@ -1,5 +1,16 @@
-<div>hero section</div>
+<div class="mb-8 h-[600px] w-screen">
+  <img
+    class="h-full w-full object-cover"
+    src="./assets/imgs/Itqan-banner.png"
+    alt="Hero banner"
+  />
+</div>
 
-<app-info-container></app-info-container>
-<app-info-container></app-info-container>
-<app-info-container></app-info-container>
+<ng-container *ngFor="let item of aboutItems">
+  <app-info-container
+    [title]="item.title"
+    [description]="item.description"
+  ></app-info-container>
+</ng-container>
+
+<app-footer></app-footer>

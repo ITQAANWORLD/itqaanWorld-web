@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   standalone:true,
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./itqaan-service-card.component.scss']
 })
 export class ItqaanServiceCardComponent {
-
+  @Input() img:string ='';
+  @Input() title:string ='';
 }

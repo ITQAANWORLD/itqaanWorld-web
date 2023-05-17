@@ -1,4 +1,14 @@
-<div>
-  <img src="" alt="cashwaqf" />
-  <p>CASH WAQF</p>
+<div
+  class="group w-52 flex flex-col items-center gap-4 m-6 hover:cursor-pointer"
+>
+  <img
+    class="w-20 h-20 object-cover group-hover:-translate-y-1 transition-all duration-400 ease-in-out"
+    [src]="img"
+    [alt]="title"
+  />
+  <p
+    class="text-primaryBlue text-xl font-bold transition-all duration-400 ease-in-out border-t-2 border-transparent group-hover:border-primaryBlue text-center uppercase"
+  >
+    {{ title }}
+  </p>
 </div>
