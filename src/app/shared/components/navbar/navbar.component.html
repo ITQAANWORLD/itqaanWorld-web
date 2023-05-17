@@ -12,15 +12,49 @@
     <li class="border-r px-4 py-4 border-headerBorder">
       <a [routerLink]="'about'"> About</a>
     </li>
-    <li class="border-r px-4 py-4 border-headerBorder"><a> Services</a></li>
     <li class="border-r px-4 py-4 border-headerBorder">
-      <a> QURAN & HADITH</a>
+      <a class="peer px-5 py-8 hover:cursor-pointer"> Services </a>
+      <!-- the menu here -->
+      <div
+        class="hidden absolute mt-6 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
+      >
+        <a
+          *ngFor="let item of services"
+          class="px-5 py-3 hover:bg-gray-200 capitalize"
+          href="#"
+          >{{ item }}</a
+        >
+      </div>
+    </li>
+    <li class="border-r px-4 py-4 border-headerBorder">
+      <a class="peer px-5 py-8 hover:cursor-pointer">QURAN & HADITH</a>
+      <!-- the menu here -->
+      <div
+        class="hidden absolute mt-6 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
+      >
+        <a
+          *ngFor="let item of quranHadith"
+          class="px-5 py-3 hover:bg-gray-200 capitalize"
+          href="#"
+          >{{ item }}</a
+        >
+      </div>
     </li>
     <li class="border-r px-4 py-4 border-headerBorder"><a> OUR TERMS</a></li>
     <li class="border-r px-4 py-4 border-headerBorder"><a> FAQs</a></li>
     <li class="border-r px-4 py-4 border-headerBorder"><a> SHOP</a></li>
     <li class="border-r px-4 py-4 border-headerBorder"><a> CONTACT</a></li>
-    <li class="border-r px-4 py-4 border-headerBorder"><a> SIGN-UP</a></li>
+    <li class="border-r px-4 py-4 border-headerBorder">
+      <a class="peer px-5 py-8 hover:cursor-pointer">SIGN-UP</a>
+      <!-- the menu here -->
+      <div
+        class="hidden absolute mt-6 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
+      >
+        <a class="px-5 py-3 hover:bg-gray-200 capitalize" href="#"
+          >my account</a
+        >
+      </div>
+    </li>
     <li class="flex items-center">
       <select
         class="text-darkText px-4 py-2 mb-0 ml-0 block w-full rounded-sm bg-white focus:outline-none"
