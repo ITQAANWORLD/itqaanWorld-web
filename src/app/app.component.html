@@ -1,4 +1,6 @@
-<div class="fixed w-screen">
-  <app-navbar></app-navbar>
+<div class="w-screen">
+  <app-navbar [scrolled]="scrolledEnough"></app-navbar>
 </div>
-<router-outlet></router-outlet>
+<div class="">
+  <router-outlet></router-outlet>
+</div>
