@@ -1,7 +1,7 @@
 <div class="w-1/2 text-center mx-auto mb-10">
   <div class="min-w-20 w-40 mx-auto border mb-6"></div>
   <p class="text-primaryBlue font-bold text-xl mb-8">{{ title }}</p>
-  <p class="text-darkText">
+  <p class="text-darkText" [ngClass]="{ 'text-black': isService }">
     {{ description }}
   </p>
 </div>
