@@ -60,6 +60,17 @@ export class HomeComponent {
       img: '../../../assets/imgs/transportation.svg',
       title: 'transportation'
     }
+  ];
+  itqaanFree = [
+    {
+      img: '../../../assets/imgs/cash-waqf.svg',
+      title: 'quran'
+    },
+    {
+      img: '../../../assets/imgs/cash-waqf.svg',
+      title: 'hadith'
+    },
   ]
+
 
 }

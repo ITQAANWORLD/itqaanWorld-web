@@ -47,11 +47,19 @@
 </div>
 
 <div class="text-center py-10">
-  <div>
+  <div class="mb-10">
     <h1 class="text-primaryBlue font-bold text-4xl mb-8">FREE</h1>
-    <p>Quran & Hadith --</p>
+    <p class="text-xl font-bold">Quran & Hadith --</p>
+
+    <div class="flex items-center justify-center gap-32 mt-12">
+      <ng-container *ngFor="let service of itqaanFree">
+        <app-itqaan-service-card
+          [img]="service.img"
+          [title]="service.title"
+        ></app-itqaan-service-card>
+      </ng-container>
+    </div>
   </div>
-  <app-itqaan-service-card></app-itqaan-service-card>
 
   <div class="text-center py-12">
     <h1 class="text-primaryBlue text-4xl mb-8">Itqaan Clients and partners</h1>
