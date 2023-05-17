@@ -6,7 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryBlue: '#3e6edf'
+        primaryBlue: ' 	hsl(222, 72%, 56%)',
+        primaryBlack: ' 	hsl(237, 24%, 16%)',
+        footerText:'hsl(215, 22%, 80%)',
+        strokeColor:'#a0adc1'
       }
     },
   },
