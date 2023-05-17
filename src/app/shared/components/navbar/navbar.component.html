@@ -1,15 +1,35 @@
-<nav class="bg-primaryBlue flex justify-between h-24 px-6 items-center">
-  <img src="" alt="logo" />
+<nav class="bg-headerBlue h-20 px-6 flex justify-between items-center">
+  <img
+    class="h-12 w-12"
+    src="../../../../assets/imgs/itqaan-logo-footer.png"
+    alt="logo"
+  />
 
-  <ul class="flex text-white gap-x-4 justify-around uppercase">
-    <li><a [routerLink]="'home'"> Home</a></li>
-    <li><a [routerLink]="'about'"> About</a></li>
-    <li><a> Services</a></li>
-    <li><a> QURAN & HADITH</a></li>
-    <li><a> OUR TERMS</a></li>
-    <li><a> FAQs</a></li>
-    <li><a> SHOP</a></li>
-    <li><a> CONTACT</a></li>
-    <li><a> SIGN-UP</a></li>
+  <ul class="flex text-white justify-around uppercase">
+    <li class="border-r px-4 py-4 border-headerBorder">
+      <a [routerLink]="'home'"> Home</a>
+    </li>
+    <li class="border-r px-4 py-4 border-headerBorder">
+      <a [routerLink]="'about'"> About</a>
+    </li>
+    <li class="border-r px-4 py-4 border-headerBorder"><a> Services</a></li>
+    <li class="border-r px-4 py-4 border-headerBorder">
+      <a> QURAN & HADITH</a>
+    </li>
+    <li class="border-r px-4 py-4 border-headerBorder"><a> OUR TERMS</a></li>
+    <li class="border-r px-4 py-4 border-headerBorder"><a> FAQs</a></li>
+    <li class="border-r px-4 py-4 border-headerBorder"><a> SHOP</a></li>
+    <li class="border-r px-4 py-4 border-headerBorder"><a> CONTACT</a></li>
+    <li class="border-r px-4 py-4 border-headerBorder"><a> SIGN-UP</a></li>
+    <li class="flex items-center">
+      <select
+        class="text-darkText px-4 py-2 mb-0 ml-0 block w-full rounded-sm bg-white focus:outline-none"
+      >
+        <option disabled selected>English</option>
+        <option>Swahili</option>
+        <option>German</option>
+        <option>French</option>
+      </select>
+    </li>
   </ul>
 </nav>
