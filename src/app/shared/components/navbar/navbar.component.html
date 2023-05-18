@@ -80,10 +80,16 @@
         >
       </div>
     </li>
-    <li class="border-r px-4 py-4 border-headerBorder"><a> OUR TERMS</a></li>
+    <li class="border-r px-4 py-4 border-headerBorder">
+      <a [routerLink]="'terms'"> OUR TERMS</a>
+    </li>
     <li class="border-r px-4 py-4 border-headerBorder"><a> FAQs</a></li>
-    <li class="border-r px-4 py-4 border-headerBorder"><a> SHOP</a></li>
-    <li class="border-r px-4 py-4 border-headerBorder"><a> CONTACT</a></li>
+    <li class="border-r px-4 py-4 border-headerBorder">
+      <a [routerLink]="'shop'"> SHOP</a>
+    </li>
+    <li class="border-r px-4 py-4 border-headerBorder">
+      <a [routerLink]="'contact'"> CONTACT</a>
+    </li>
     <li class="border-r px-4 py-4 border-headerBorder">
       <a class="peer px-5 py-8 hover:cursor-pointer">SIGN-UP</a>
       <!-- the menu here -->
