@@ -44,7 +44,7 @@ export class NavbarComponent {
     route: 'itqaan-hajj'
   }, 
     {title:'itqaan transportation',
-    route: ''
+    route: 'itqaan-transportation'
   }]
   quranHadith = ['quran', 'hadith']
 
