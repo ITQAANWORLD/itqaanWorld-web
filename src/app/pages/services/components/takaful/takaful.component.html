@@ -1,1 +1,466 @@
-<p>takaful works!</p>
+<!-- hero section -->
+<div
+  [style.background-image]="
+    'url(../../../../../../../assets/imgs/p2p-banner.webp)'
+  "
+  class="flex flex-col items-center justify-center p-10 min-h-[600px] w-screen py-32 mb-8"
+>
+  <p class="text-4xl text-white font-bold w-[720px] text-center mb-12">
+    <!-- SADAQA -->
+  </p>
+</div>
+
+<!-- info section -->
+<div>
+  <ng-container *ngFor="let item of aboutItems">
+    <app-info-container
+      [title]="item.title"
+      [description]="item.description"
+      [isService]="true"
+    ></app-info-container>
+  </ng-container>
+</div>
+
+<div class="w-1/2 mx-auto grid grid-cols-2 gap-10">
+  <div class="">
+    <app-info-container [title]="'Individual Takaful'"></app-info-container>
+    <div class="">
+      <p class="text-primaryBlue text-xl mb-8">Online Products</p>
+
+      <div
+        class="grid divide-y divide-neutral-200 content-center text-primaryWhite"
+      >
+        <div class="pb-5">
+          <details class="group">
+            <summary
+              class="flex justify-between items-center font-medium cursor-pointer list-none"
+            >
+              <span class="font-headingExtraBold text-xl">Takaful Motor:</span>
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <div class="text-slate-400 mt-2">
+              <div class="mb-4">
+                <p class="font-bold">What Cover do We have?</p>
+                <ul class="list-disc pl-6">
+                  <li>
+                    Your policy cover will normally run for 12 months and is
+                    renewable annually.
+                  </li>
+                  <li>
+                    Takaful will cover you for any loss or damage to the insured
+                    vehicle and its spare part accessories.
+                  </li>
+                  <li>
+                    Takaful will cover you for any amount that you as the owner
+                    of the motor vehicle may be legally liable for
+                  </li>
+                  <li>
+                    Takaful will cover you in respect of death of or bodily
+                    injury to any person including all passengers in the
+                    vehicles except you, your spouse, your children or the
+                    driver.
+                  </li>
+                  <li>
+                    Takaful will cover you in respect of property damage except
+                    those owned by you or the driver at the time of accident or
+                    property that has been entrusted to you or is in your
+                    custody or control.
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <p class="font-bold">How much must I pay if I have a claim?</p>
+                <ul class="list-disc pl-6">
+                  <li>
+                    Accidental damage: 2.5% of Sum Insured, Minimum Kshs
+                    15,000/-, Maximum Kshs 100,000/-
+                  </li>
+                  <li>
+                    Partial Theft of vehicle parts: 2.5% of Sum Insured, Minimum
+                    Kshs 15,000/-
+                  </li>
+                  <li>
+                    Theft where vehicle has anti theft device: 10% of Sum
+                    Insured, Minimum Kshs 20,000/-
+                  </li>
+                  <li>
+                    Theft for vehicle without anti theft device: 20% of Sum
+                    Insured, Minimum Kshs 20,000/-
+                  </li>
+                  <li>
+                    Theft for vehicle with tracking device: 2.5% of Sum Insured,
+                    Minimum Kshs 20,000/-
+                  </li>
+                  <li>Third Party Property Damage: Kshs 7,500/-</li>
+                  <li>Young drivers below 21 years: Ksh.5,000 Additional</li>
+                  <li>
+                    Drivers with less than 1 year driving experience: Kshs 5,000
+                    Additional
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <p class="font-bold">
+                  For Total Loss & Theft of vehicle we will also ask for the
+                  following:
+                </p>
+                <ul class="list-decimal pl-6">
+                  <li>Duplicate certificate of Insurance</li>
+
+                  <li>Valuation/Assessment report</li>
+                  <li>Original logbook in our insured’s name</li>
+                  <li>Copy of PIN Certificate</li>
+                  <li>Copy of National Identity card</li>
+                  <li>For companies – Certificate of registration</li>
+                  <li>Signed but undated transfer form</li>
+                  <li>Spare car keys</li>
+                  <li>Spare wheel, jack & spanner</li>
+                  <li>For total loss surrender the salvage</li>
+                </ul>
+              </div>
+            </div>
+            <a class="text-primaryBlue cursor-pointer">Request a Quote</a>
+          </details>
+        </div>
+        <div class="pb-5">
+          <details class="group">
+            <summary
+              class="flex justify-between items-center font-medium cursor-pointer list-none"
+            >
+              <span class="font-headingExtraBold text-xl"
+                >Motorcycle Comprehensive:</span
+              >
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <div class="text-slate-400 mt-2">
+              <div class="mb-4">
+                <p class="font-bold">What Cover do We have?</p>
+                <ul class="list-disc pl-6">
+                  <li>
+                    Your policy cover will normally run for 12 months and is
+                    renewable annually.
+                  </li>
+                  <li>
+                    Takaful will cover you for any loss or damage to the insured
+                    vehicle and its spare part accessories.
+                  </li>
+                  <li>
+                    Takaful will cover you for any amount that you as the owner
+                    of the motor vehicle may be legally liable for
+                  </li>
+                  <li>
+                    Takaful will cover you in respect of death of or bodily
+                    injury to any person including all passengers in the
+                    vehicles except you, your spouse, your children or the
+                    driver.
+                  </li>
+                  <li>
+                    Takaful will cover you in respect of property damage except
+                    those owned by you or the driver at the time of accident or
+                    property that has been entrusted to you or is in your
+                    custody or control.
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <p class="font-bold">How much must I pay if I have a claim?</p>
+                <ul class="list-disc pl-6">
+                  <li>
+                    Accidental Damage = 5% of sum Insured, Minimum Ksh.7,500
+                  </li>
+                  <li>
+                    Theft with chain & padlock = 10% of Sum insured, Minimum
+                    Kshs 10,000/-
+                  </li>
+                  <li>
+                    Theft without chain & Padlock = 20% of Sum insured, Minimum
+                    kshs 15,000/-
+                  </li>
+                  <li>Third Party Property Damage = Kshs 3,000/-</li>
+                  <li>Young Rider below 21 years = Ksh.2,000 Additional</li>
+                  <li>Third Party Property Damage: Kshs 7,500/-</li>
+                  <li>Young drivers below 21 years: Ksh.5,000 Additional</li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <p class="font-bold">How do I make a claim?</p>
+                <p>
+                  You should report to us immediately. We will ask you for the
+                  following documents:
+                </p>
+                <ul class="list-decimal pl-6">
+                  <li>Completed Claim Form</li>
+
+                  <li>Copy of the log book</li>
+                  <li>Police Abstract Report</li>
+                  <li>
+                    Motor Vehicle Inspection report (for third-party claims)
+                  </li>
+                  <li>Copy of the Driver’s Driving licence</li>
+                  <li>Notice of intention to prosecute(if any)</li>
+                </ul>
+              </div>
+
+              <div class="mb-4">
+                <p class="font-bold">
+                  For Total Loss & Theft of vehicle we will also ask for the
+                  following:
+                </p>
+
+                <ul class="list-decimal pl-6">
+                  <li>Duplicate certificate of Insurance</li>
+
+                  <li>Valuation/Assessment report</li>
+                  <li>Original logbook in our insured’s name</li>
+                  <li>Copy of PIN Certificate</li>
+                  <li>Copy of National Identity card</li>
+                  <li>For companies – Certificate of registration</li>
+                  <li>Signed but undated transfer form</li>
+                  <li>Spare car keys</li>
+                  <li>Spare wheel, jack & spanner</li>
+                  <li>For total loss surrender the salvage</li>
+                </ul>
+              </div>
+            </div>
+            <a class="text-primaryBlue cursor-pointer">Request a Quote</a>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <app-info-container [title]="'Corporate Takaful'"></app-info-container>
+    <div class="">
+      <p class="text-primaryBlue text-xl mb-8">Online Products</p>
+
+      <div
+        class="grid divide-y divide-neutral-200 content-center text-primaryWhite"
+      >
+        <div class="pb-5">
+          <details class="group">
+            <summary
+              class="flex justify-between items-center font-medium cursor-pointer list-none"
+            >
+              <span class="font-headingExtraBold text-xl"> Themes</span>
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="text-primaryWhite mt-3 group-open:animate-fade">
+              The themes are related to disruptive technologies in all major
+              industries (Fintech, Agritech, Edtech, Govtech etc.)
+            </p>
+          </details>
+        </div>
+        <div class="pb-5">
+          <details class="group">
+            <summary
+              class="flex justify-between items-center font-medium cursor-pointer list-none"
+            >
+              <span class="font-headingExtraBold text-xl">Takaful Motor:</span>
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <div class="text-slate-400 mt-2">
+              <div class="mb-4">
+                <p class="font-bold">What Cover do We have?</p>
+                <ul class="list-disc pl-6">
+                  <li>
+                    Your policy cover will normally run for 12 months and is
+                    renewable annually.
+                  </li>
+                  <li>
+                    Takaful will cover you for any loss or damage to the insured
+                    vehicle and its spare part accessories.
+                  </li>
+                  <li>
+                    Takaful will cover you for any amount that you as the owner
+                    of the motor vehicle may be legally liable for
+                  </li>
+                  <li>
+                    Takaful will cover you in respect of death of or bodily
+                    injury to any person including all passengers in the
+                    vehicles except you, your spouse, your children or the
+                    driver.
+                  </li>
+                  <li>
+                    Takaful will cover you in respect of property damage except
+                    those owned by you or the driver at the time of accident or
+                    property that has been entrusted to you or is in your
+                    custody or control.
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <p class="font-bold">How much must I pay if I have a claim?</p>
+                <ul class="list-disc pl-6">
+                  <li>
+                    Accidental damage: 2.5% of Sum Insured, Minimum Kshs
+                    15,000/-, Maximum Kshs 100,000/-
+                  </li>
+                  <li>
+                    Partial Theft of vehicle parts: 2.5% of Sum Insured, Minimum
+                    Kshs 15,000/-
+                  </li>
+                  <li>
+                    Theft where vehicle has anti theft device: 10% of Sum
+                    Insured, Minimum Kshs 20,000/-
+                  </li>
+                  <li>
+                    Theft for vehicle without anti theft device: 20% of Sum
+                    Insured, Minimum Kshs 20,000/-
+                  </li>
+                  <li>
+                    Theft for vehicle with tracking device: 2.5% of Sum Insured,
+                    Minimum Kshs 20,000/-
+                  </li>
+                  <li>Third Party Property Damage: Kshs 7,500/-</li>
+                  <li>Young drivers below 21 years: Ksh.5,000 Additional</li>
+                  <li>
+                    Drivers with less than 1 year driving experience: Kshs 5,000
+                    Additional
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <p class="font-bold">
+                  For Total Loss & Theft of vehicle we will also ask for the
+                  following:
+                </p>
+                <ul class="list-decimal pl-6">
+                  <li>Duplicate certificate of Insurance</li>
+
+                  <li>Valuation/Assessment report</li>
+                  <li>Original logbook in our insured’s name</li>
+                  <li>Copy of PIN Certificate</li>
+                  <li>Copy of National Identity card</li>
+                  <li>For companies – Certificate of registration</li>
+                  <li>Signed but undated transfer form</li>
+                  <li>Spare car keys</li>
+                  <li>Spare wheel, jack & spanner</li>
+                  <li>For total loss surrender the salvage</li>
+                </ul>
+              </div>
+            </div>
+            <a class="text-primaryBlue cursor-pointer">Request a Quote</a>
+          </details>
+        </div>
+        <div class="pb-5">
+          <details class="group">
+            <summary
+              class="flex justify-between items-center font-medium cursor-pointer list-none"
+            >
+              <span class="font-headingExtraBold text-xl"> Themes</span>
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="text-primaryWhite mt-3 group-open:animate-fade">
+              The themes are related to disruptive technologies in all major
+              industries (Fintech, Agritech, Edtech, Govtech etc.)
+            </p>
+          </details>
+        </div>
+        <div class="pb-5">
+          <details class="group">
+            <summary
+              class="flex justify-between items-center font-medium cursor-pointer list-none"
+            >
+              <span class="font-headingExtraBold text-xl"> Themes</span>
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="text-primaryWhite mt-3 group-open:animate-fade">
+              The themes are related to disruptive technologies in all major
+              industries (Fintech, Agritech, Edtech, Govtech etc.)
+            </p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="flex flex-wrap justify-center w-4/5 mx-auto place-items-center"
+  ></div>
+</div>
+
+<!-- footer -->
+<app-footer></app-footer>
