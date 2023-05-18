@@ -46,6 +46,15 @@ export class NavbarComponent {
     {title:'itqaan transportation',
     route: 'itqaan-transportation'
   }]
-  quranHadith = ['quran', 'hadith']
+  quranHadith = [
+    {
+      title:'Quran',
+      route: ''
+    },
+    {
+      title:'Hadith',
+      route: 'hadith'
+    },
+  ]
 
 }

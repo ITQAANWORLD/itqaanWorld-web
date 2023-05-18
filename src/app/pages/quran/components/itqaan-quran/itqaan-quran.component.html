@@ -1,0 +1,21 @@
+<!-- hero section -->
+<div
+  [style.background-image]="
+    'url(../../../../../../../assets/imgs/quran-banner.webp)'
+  "
+  class="flex flex-col items-center justify-center p-10 min-h-[600px] w-screen py-32 bg-no-repeat bg-cover mb-10"
+></div>
+
+<!-- info section -->
+<div>
+  <ng-container *ngFor="let item of aboutItems">
+    <app-info-container
+      [title]="item.title"
+      [description]="item.description"
+      [isService]="true"
+    ></app-info-container>
+  </ng-container>
+</div>
+
+<!-- footer -->
+<app-footer></app-footer>

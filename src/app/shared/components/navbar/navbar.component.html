@@ -62,7 +62,6 @@
           *ngFor="let item of services"
           [routerLink]="'services/' + item.route"
           class="px-5 py-3 hover:bg-gray-200 capitalize"
-          href="#"
           >{{ item.title }}</a
         >
       </div>
@@ -75,9 +74,9 @@
       >
         <a
           *ngFor="let item of quranHadith"
+          [routerLink]="'quran/' + item.route"
           class="px-5 py-3 hover:bg-gray-200 capitalize"
-          href="#"
-          >{{ item }}</a
+          >{{ item.title }}</a
         >
       </div>
     </li>
@@ -91,9 +90,7 @@
       <div
         class="hidden absolute mt-6 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
       >
-        <a class="px-5 py-3 hover:bg-gray-200 capitalize" href="#"
-          >my account</a
-        >
+        <a class="px-5 py-3 hover:bg-gray-200 capitalize">my account</a>
       </div>
     </li>
     <li class="flex items-center">
@@ -129,7 +126,6 @@
           *ngFor="let item of services"
           [routerLink]="'services/' + item.route"
           class="px-5 py-3 hover:bg-gray-200 capitalize"
-          href="#"
           >{{ item.title }}</a
         >
       </div>
@@ -143,7 +139,6 @@
         <a
           *ngFor="let item of quranHadith"
           class="px-5 py-3 hover:bg-gray-200 capitalize"
-          href="#"
           >{{ item }}</a
         >
       </div>
@@ -158,9 +153,7 @@
       <div
         class="hidden absolute mt-6 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
       >
-        <a class="px-5 py-3 hover:bg-gray-200 capitalize" href="#"
-          >my account</a
-        >
+        <a class="px-5 py-3 hover:bg-gray-200 capitalize">my account</a>
       </div>
     </li>
     <li class="flex items-center">
