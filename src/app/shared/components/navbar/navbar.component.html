@@ -1,9 +1,9 @@
 <nav
   [ngClass]="{ 'fixed w-screen': scrolled }"
-  class="bg-headerBlue h-20 px-6 flex justify-between items-center"
+  class="bg-headerBlue h-20 px-6 flex justify-between"
 >
   <img
-    class="h-12 w-12"
+    class="h-12 w-12 self-center"
     src="../../../../assets/imgs/itqaan-logo-footer.png"
     alt="logo"
   />
@@ -46,17 +46,28 @@
   </div>
 
   <ul class="hidden lg:flex text-white justify-around uppercase">
-    <li class="border-r px-4 py-4 border-headerBorder">
-      <a [routerLink]="'home'"> Home</a>
+    <li
+      [routerLink]="'home'"
+      [routerLinkActive]="'border-b-white'"
+      class="border-r px-4 hover:cursor-pointer py-4 border-headerBorder border-b-4 flex items-center border-b-transparent transition-all duration-300 hover:border-b-white"
+    >
+      Home
     </li>
-    <li class="border-r px-4 py-4 border-headerBorder">
-      <a [routerLink]="'about'"> About</a>
+    <li
+      [routerLink]="'about'"
+      [routerLinkActive]="'border-b-white'"
+      class="hover:cursor-pointer border-r px-4 py-4 border-headerBorder flex items-center border-b-4 border-b-transparent transition-all duration-300 hover:border-b-white"
+    >
+      About
     </li>
-    <li class="border-r px-4 py-4 border-headerBorder">
+    <li
+      [routerLinkActive]="'border-b-white'"
+      class="border-r px-4 py-4 border-headerBorder flex items-center border-b-4 border-b-transparent transition-all duration-300 hover:border-b-white"
+    >
       <a class="peer px-5 py-8 hover:cursor-pointer"> Services </a>
       <!-- the menu here -->
       <div
-        class="hidden absolute mt-6 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
+        class="hidden absolute mt-[694px] -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
       >
         <a
           *ngFor="let item of services"
@@ -66,11 +77,14 @@
         >
       </div>
     </li>
-    <li class="border-r px-4 py-4 border-headerBorder">
+    <li
+      [routerLinkActive]="'border-b-white'"
+      class="border-r px-4 py-4 border-headerBorder flex items-center border-b-4 border-b-transparent transition-all duration-300 hover:border-b-white"
+    >
       <a class="peer px-5 py-8 hover:cursor-pointer">QURAN & HADITH</a>
       <!-- the menu here -->
       <div
-        class="hidden absolute mt-6 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
+        class="hidden absolute mt-48 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
       >
         <a
           *ngFor="let item of quranHadith"
@@ -80,17 +94,35 @@
         >
       </div>
     </li>
-    <li class="border-r px-4 py-4 border-headerBorder">
-      <a [routerLink]="'terms'"> OUR TERMS</a>
+    <li
+      [routerLink]="'terms'"
+      [routerLinkActive]="'border-b-white'"
+      class="hover:cursor-pointer border-r px-4 py-4 border-headerBorder flex items-center border-b-4 border-b-transparent transition-all duration-300 hover:border-b-white"
+    >
+      OUR TERMS
     </li>
-    <li class="border-r px-4 py-4 border-headerBorder"><a> FAQs</a></li>
-    <li class="border-r px-4 py-4 border-headerBorder">
-      <a [routerLink]="'shop'"> SHOP</a>
+    <li
+      class="hover:cursor-pointer border-r px-4 py-4 border-headerBorder flex items-center border-b-4 border-b-transparent transition-all duration-300 hover:border-b-white"
+    >
+      FAQs
     </li>
-    <li class="border-r px-4 py-4 border-headerBorder">
-      <a [routerLink]="'contact'"> CONTACT</a>
+    <li
+      [routerLink]="'shop'"
+      [routerLinkActive]="'border-b-white'"
+      class="hover:cursor-pointer border-r px-4 py-4 border-headerBorder flex items-center border-b-4 border-b-transparent transition-all duration-300 hover:border-b-white"
+    >
+      SHOP
     </li>
-    <li class="border-r px-4 py-4 border-headerBorder">
+    <li
+      [routerLink]="'contact'"
+      [routerLinkActive]="'border-b-white'"
+      class="hover:cursor-pointer border-r px-4 py-4 border-headerBorder flex items-center border-b-4 border-b-transparent transition-all duration-300 hover:border-b-white"
+    >
+      CONTACT
+    </li>
+    <li
+      class="hover:cursor-pointer border-r px-4 py-4 border-headerBorder flex items-center border-b-4 border-b-transparent transition-all duration-300 hover:border-b-white"
+    >
       <a class="peer px-5 py-8 hover:cursor-pointer">SIGN-UP</a>
       <!-- the menu here -->
       <div

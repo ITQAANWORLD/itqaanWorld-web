@@ -7,6 +7,7 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { ItqaanServiceCardComponent } from './shared/components/itqaan-service-card/itqaan-service-card.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { InfoContainerComponent } from './shared/components/info-container/info-container.component';
+import { RouterLinkActive } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { InfoContainerComponent } from './shared/components/info-container/info-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterLinkActive
   ],
   providers: [],
   bootstrap: [AppComponent]
