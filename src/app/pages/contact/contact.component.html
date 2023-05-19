@@ -1,1 +1,79 @@
-<p>contact works!</p>
+<!-- hero section -->
+<div
+  [style.background-image]="'url(../../../assets/imgs/Itqan-banner.webp)'"
+  class="bg-headerBlue flex flex-col items-center justify-center p-10 min-h-[600px] w-screen py-32"
+>
+  <p class="text-4xl text-white font-bold w-[720px] text-center mb-12">Shop</p>
+</div>
+
+<!-- About section -->
+<div
+  class="px-10 py-4 w-3/4 mx-auto my-20 flex items-start justify-between gap-4"
+>
+  <div>
+    <h1 class="text-xl text-primaryBlue font-bold mb-4">Address:</h1>
+    <p class="text-[#808080] w-3/4">
+      1. P.O. Box 80272-80100 Makadara Road, Mombasa, Kenya
+    </p>
+  </div>
+
+  <div>
+    <div class="mb-6">
+      <h1 class="text-xl text-primaryBlue font-bold mb-4">Telephone:</h1>
+      <p class="text-primaryBlue">+ (254) 790027227</p>
+      <p class="text-primaryBlue">+ (254) 704998254</p>
+    </div>
+
+    <h1 class="text-xl text-primaryBlue font-bold mb-4">E-mail Information:</h1>
+
+    <p class="text-primaryBlue">info@itqaan.world</p>
+    <p class="text-primaryBlue">contact@itqaan.world</p>
+  </div>
+  <div>
+    <h1 class="text-xl text-primaryBlue font-bold mb-4">E-mail Information:</h1>
+    <form>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <input
+          class="bg-gray-200 p-2"
+          type="text"
+          placeholder="Your Name"
+          name="name"
+          id="name"
+        />
+        <input
+          class="bg-gray-200 p-2"
+          type="email"
+          placeholder="Your Email"
+          name="email"
+          id="email"
+        />
+      </div>
+      <div class="grid mb-4">
+        <input
+          class="bg-gray-200 p-2"
+          type="text"
+          name="subject"
+          id="name"
+          placeholder="Subject"
+        />
+      </div>
+      <div class="grid mb-4">
+        <textarea
+          class="bg-gray-200 p-2"
+          name="message"
+          placeholder="Message"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div>
+        <button class="px-4 py-2 bg-primaryBlue text-white">
+          Send a message
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<app-footer></app-footer>
