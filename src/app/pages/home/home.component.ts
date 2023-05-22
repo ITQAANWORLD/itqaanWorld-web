@@ -18,7 +18,7 @@ export class HomeComponent {
     },
     {
       img: '../../../assets/imgs/sadaqah.svg',
-      title: 'sadawah'
+      title: 'sadaqa'
     },
     {
       img: '../../../assets/imgs/zakaat.svg',
