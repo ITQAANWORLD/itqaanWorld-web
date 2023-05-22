@@ -3,7 +3,7 @@
   [style.background-image]="
     'url(../../../../../../../assets/imgs/p2p-banner.webp)'
   "
-  class="flex flex-col items-center justify-center p-10 min-h-[600px] w-screen py-32 mb-8"
+  class="flex flex-col items-center justify-center p-10 min-h-[500px] md:min-h-[600px] bg-cover w-screen py-32 mb-8 overflow-hidden"
 >
   <p class="text-4xl text-white font-bold w-[720px] text-center mb-12">
     <!-- SADAQA -->
@@ -24,7 +24,9 @@
   <app-info-container
     [title]="'PAY FOR YOUR UTILITY BILLS'"
   ></app-info-container>
-  <div class="flex flex-wrap justify-center w-4/5 mx-auto place-items-center">
+  <div
+    class="flex flex-wrap justify-center md:w-4/5 mx-auto place-items-center"
+  >
     <ng-container *ngFor="let service of itqaanServices">
       <app-itqaan-service-card
         [img]="service.img"

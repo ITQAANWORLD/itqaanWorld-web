@@ -23,10 +23,10 @@ export class CashWaqfComponent {
   },
   ];
   itqaanServices = [
-    {
-      img: './assets/imgs/cash-waqf.webp',
-      title: 'Individual Beneficiary'
-    },
+    // {
+    //   img: './assets/imgs/cash-waqf.webp',
+    //   title: 'Individual Beneficiary'
+    // },
     {
       img: './assets/imgs/waqf-beneficiary.webp',
       title: 'Institutional Beneficiary'

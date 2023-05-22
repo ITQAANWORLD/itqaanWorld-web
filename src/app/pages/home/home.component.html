@@ -1,19 +1,25 @@
 <!-- hero section -->
 <div
   [style.background-image]="'url(../../../assets/imgs/Itqan-banner.webp)'"
-  class="flex flex-col items-center justify-center p-10 min-h-[600px] w-screen py-32"
+  class="flex flex-col items-center justify-center w-screen min-h-[500px] bg-no-repeat md:py-32 md:min-h-[600px]"
 >
-  <p class="text-4xl text-white font-bold w-[720px] text-center mb-12">
+  <p
+    class="text-2xl md:text-4xl text-white font-bold md:w-[720px] text-center mb-12"
+  >
     Itqaan platform:"Perfecting your spiritual journey with precison, excellence
     and Sharia adherence."
   </p>
   <div class="flex items-center justify-center mb-6">
     <img
-      class="h-24"
+      class="h-16 md:h-24"
       src="../../../assets/imgs/playstore-logo.png"
       alt="playstore"
     />
-    <img class="h-16" src="../../../assets/imgs/apple-logo.png" alt="apple" />
+    <img
+      class="h-11 md:h-16"
+      src="../../../assets/imgs/apple-logo.png"
+      alt="apple"
+    />
   </div>
   <img
     src="../../../assets/imgs/itqaan-Qr.jpg"
@@ -23,20 +29,24 @@
 </div>
 
 <!-- About section -->
-<div class="bg-[#f0f1f3] py-28 text-center">
-  <h1 class="text-primaryBlue font-bold text-4xl mb-8">ABOUT ITQAAN</h1>
-  <p class="text-xl font-bold w-3/4 mx-auto">
+<div class="bg-[#f0f1f3] py-10 md:py-28 text-center px-6 md:px-0">
+  <h1 class="text-primaryBlue font-bold text-2xl md:text-4xl mb-8">
+    ABOUT ITQAAN
+  </h1>
+  <p class="text-xl font-bold md:w-3/4 mx-auto">
     Itqaan.world Is an Ajr Islamic fintech app purposed to serve, educate
     ,eradicate poverty, scale awareness of Islamic best practice for the entire
     Ummah. Through a simplified daily digital journey.
   </p>
 </div>
 
-<div class="py-10">
-  <h1 class="text-center text-primaryBlue font-bold text-4xl mb-8">
+<div class="py-6 md:py-10">
+  <h1
+    class="text-center text-primaryBlue font-bold text-2xl md:text-4xl mb-4 md:mb-8"
+  >
     ITQAAN SERVICES
   </h1>
-  <div class="grid grid-cols-4 w-4/5 mx-auto place-items-center">
+  <div class="grid md:grid-cols-4 md:w-4/5 mx-auto place-items-center">
     <ng-container *ngFor="let service of itqaanServices">
       <app-itqaan-service-card
         [img]="service.img"
@@ -46,12 +56,14 @@
   </div>
 </div>
 
-<div class="text-center py-10">
+<div class="text-center py-6 md:py-10">
   <div class="mb-10">
-    <h1 class="text-primaryBlue font-bold text-4xl mb-8">FREE</h1>
+    <h1 class="text-primaryBlue font-bold text-2xl md:text-4xl mb-8">FREE</h1>
     <p class="text-xl font-bold">Quran & Hadith --</p>
 
-    <div class="flex items-center justify-center gap-32 mt-12">
+    <div
+      class="grid md:flex items-center justify-center md:gap-32 mt-6 md:mt-12"
+    >
       <ng-container *ngFor="let service of itqaanFree">
         <app-itqaan-service-card
           [img]="service.img"
@@ -61,8 +73,10 @@
     </div>
   </div>
 
-  <div class="text-center py-12">
-    <h1 class="text-primaryBlue text-4xl mb-8">Itqaan Clients and partners</h1>
+  <div class="text-center py-8 md:py-12">
+    <h1 class="text-primaryBlue text-2xl md:text-4xl mb-8">
+      Itqaan Clients and partners
+    </h1>
     <p>Our Partners</p>
   </div>
 </div>
