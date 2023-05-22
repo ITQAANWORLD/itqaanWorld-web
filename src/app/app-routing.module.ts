@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'terms', loadChildren: () => import('./pages/terms/terms.routes').then(m => m.TERMS_ROUTES) },
   { path: 'shop', loadChildren: () => import('./pages/shop/shop.routes').then(m => m.SHOP_ROUTES) },
   { path: 'contact', loadChildren: () => import('./pages/contact/contact.routes').then(m => m.CONTACT_ROUTES) },
+  {path: '**', redirectTo:'home'}
 ];
 
 @NgModule({
