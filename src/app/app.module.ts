@@ -17,7 +17,9 @@ import { RouterLinkActive } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterLinkActive
+    RouterLinkActive,
+    FooterComponent
+
   ],
   providers: [],
   bootstrap: [AppComponent]
