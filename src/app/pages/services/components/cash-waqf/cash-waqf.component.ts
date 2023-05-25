@@ -29,7 +29,8 @@ export class CashWaqfComponent {
     // },
     {
       img: './assets/imgs/waqf-beneficiary.webp',
-      title: 'Institutional Beneficiary'
+      title: 'Institutional Beneficiary',
+      route: 'institutional-beneficiary'
     },
   ];
 
