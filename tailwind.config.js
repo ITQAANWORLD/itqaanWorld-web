@@ -4,6 +4,9 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
+    daisyui: {
+      themes: ["cupcake", "dark", "cmyk"],
+    },
     extend: {
       colors: {
         headerBlue:'hsl(214, 96%, 41%)',
@@ -16,6 +19,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+
 }
 
