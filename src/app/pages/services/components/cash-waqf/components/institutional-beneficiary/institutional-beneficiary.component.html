@@ -1,1 +1,151 @@
-<p>institutional-beneficiary works!</p>
+<!-- List locations -->
+<div class="md:w-1/2 mx-auto space-y-4">
+  <div class="flex items-center justify-between py-6">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6 hover:cursor-pointer"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+      />
+    </svg>
+
+    <h1 class="text-center text-2xl font-bold">Select Institution Location</h1>
+    <div></div>
+  </div>
+  <div
+    class="flex items-center justify-between gap-x-6 border-b-2 p-4 group transition-all duration-300 hover:shadow-md hover:border-transparent"
+  >
+    <div class="flex items-center gap-x-4 text-xl">
+      <div
+        class="rounded-full bg-headerBlue text-white w-10 h-10 flex items-center justify-center text-2xl"
+      >
+        A
+      </div>
+      <p>Abia</p>
+    </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6 transition-all duration-500 group-hover:w-10"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+      />
+    </svg>
+  </div>
+</div>
+
+<!-- List Institutions -->
+<div class="md:w-1/2 mx-auto space-y-4 my-8">
+  <div class="flex items-center justify-between py-6">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6 hover:cursor-pointer"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+      />
+    </svg>
+
+    <h1 class="text-center text-2xl font-bold">Select Institution</h1>
+    <div></div>
+  </div>
+  <div
+    class="flex items-center justify-between gap-x-6 px-4 py-6 shadow-md group transition-all duration-300 hover:shadow-md"
+  >
+    <div class="flex items-start gap-x-4">
+      <img src="https://picsum.photos/100/100" alt="Institution pic" />
+
+      <div class="w-1/2">
+        <p class="text-xl font-bold">Institution Name</p>
+        <p class="text-slate-400 text-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+          libero.
+        </p>
+      </div>
+    </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6 transition-all duration-500 group-hover:w-10"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+      />
+    </svg>
+  </div>
+</div>
+
+<!-- Institution details -->
+<div class="md:w-1/2 mx-auto space-y-4 my-8">
+  <div class="flex items-center justify-between py-6">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6 hover:cursor-pointer"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+      />
+    </svg>
+
+    <h1 class="text-center text-2xl font-bold">Institution Details</h1>
+    <div></div>
+  </div>
+
+  <div class="flex flex-col gap-6">
+    <img src="https://picsum.photos/1200/500" alt="Institution pic" />
+    <p class="font-bold text-xl">Institution Name</p>
+
+    <button class="w-64 text-white bg-orange-400 px-4 py-2 rounded-sm">
+      + Add to your donation list
+    </button>
+
+    <p>Mosque code: PS 157</p>
+
+    <ng-container *ngFor="let item of iconCards">
+      <app-icon-card
+        [title]="item.title"
+        [description]="item.description"
+        [icon]="item.icon"
+      ></app-icon-card>
+    </ng-container>
+  </div>
+
+  <button
+    class="w-full bg-orange-400 flex items-center justify-center gap-x-6 text-white py-6"
+  >
+    <img src="./assets/imgs/sadaqah.svg" alt="Donate icon" class="w-10 h-10" />
+    <p>Donate now</p>
+  </button>
+</div>
+
+<app-footer></app-footer>
