@@ -58,7 +58,7 @@ export class HomeComponent {
     },
     {
       img: '../../../assets/imgs/transportation.svg',
-      title: 'transportation'
+      title: 'transport'
     }
   ];
   itqaanFree = [

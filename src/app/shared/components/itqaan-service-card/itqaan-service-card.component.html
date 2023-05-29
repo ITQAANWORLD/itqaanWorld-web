@@ -1,5 +1,5 @@
 <div
-  class="group w-52 flex flex-col items-center gap-4 m-6 hover:cursor-pointer"
+  class="group md:w-52 w-20 flex flex-col items-center gap-4 m-6 hover:cursor-pointer"
   [ngClass]="{ 'w-72': isService }"
   [routerLink]="route"
 >
@@ -10,7 +10,7 @@
     [alt]="title"
   />
   <p
-    class="text-primaryBlue text-xl font-bold transition-all duration-400 ease-in-out border-t-2 border-transparent group-hover:border-primaryBlue text-center uppercase"
+    class="whitespace-normal text-primaryBlue md:text-xl font-bold transition-all duration-400 ease-in-out border-t-2 border-transparent group-hover:border-primaryBlue text-center uppercase"
     [ngClass]="{ 'text-primaryBlack font-normal capitalize': isService }"
   >
     {{ title }}
