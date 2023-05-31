@@ -132,7 +132,7 @@
 </div>
 
 <!-- Institution details -->
-<div class="md:w-1/2 md:mx-auto mx-6 space-y-4 py-8" *ngIf="isDonate">
+<div class="md:w-3/4 md:mx-auto mx-6 space-y-4 py-8" *ngIf="isDonate">
   <div class="flex items-center justify-between py-6">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -154,32 +154,7 @@
     <div></div>
   </div>
 
-  <div class="flex flex-col gap-6">
-    <img src="https://picsum.photos/1200/500" alt="Institution pic" />
-    <p class="font-bold text-xl">Institution Name</p>
-
-    <button class="w-64 text-white bg-orange-400 px-4 py-2 rounded-sm">
-      + Add to your donation list
-    </button>
-
-    <p>Mosque code: PS 157</p>
-
-    <ng-container *ngFor="let item of iconCards">
-      <app-icon-card
-        [title]="item.title"
-        [description]="item.description"
-        [icon]="item.icon"
-      ></app-icon-card>
-    </ng-container>
-  </div>
-
-  <button
-    class="w-full bg-orange-400 flex items-center justify-center gap-x-6 text-white py-6"
-    (click)="toggleSelected('selected')"
-  >
-    <img src="./assets/imgs/sadaqah.svg" alt="Donate icon" class="w-10 h-10" />
-    <p>Donate now</p>
-  </button>
+  <app-selected-institution></app-selected-institution>
 </div>
 
 <!-- Enter amount -->
