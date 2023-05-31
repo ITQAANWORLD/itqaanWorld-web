@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from "../../../../../../shared/components/footer/footer.component";
 import { IconCardComponent } from "../../../../../../shared/components/icon-card/icon-card.component";
 import { RouterLink } from '@angular/router';
+import { InstitutionCardComponent } from "../../../../../../shared/components/institution-card/institution-card.component";
 
 @Component({
     selector: 'app-institutional-beneficiary',
     standalone: true,
     templateUrl: './institutional-beneficiary.component.html',
     styleUrls: ['./institutional-beneficiary.component.scss'],
-    imports: [CommonModule, FooterComponent, IconCardComponent, RouterLink]
+    imports: [CommonModule, FooterComponent, IconCardComponent, RouterLink, InstitutionCardComponent]
 })
 export class InstitutionalBeneficiaryComponent {
 
