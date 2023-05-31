@@ -3,19 +3,21 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from "../../../../../../shared/components/footer/footer.component";
 import { IconCardComponent } from "../../../../../../shared/components/icon-card/icon-card.component";
 import { RouterLink } from '@angular/router';
+import { InstitutionCardComponent } from "../../../../../../shared/components/institution-card/institution-card.component";
+import { SelectedInstitutionComponent } from "../../../../../../shared/components/selected-institution/selected-institution.component";
 
 @Component({
     selector: 'app-institutional-beneficiary',
     standalone: true,
     templateUrl: './institutional-beneficiary.component.html',
     styleUrls: ['./institutional-beneficiary.component.scss'],
-    imports: [CommonModule, FooterComponent, IconCardComponent, RouterLink]
+    imports: [CommonModule, FooterComponent, IconCardComponent, RouterLink, InstitutionCardComponent, SelectedInstitutionComponent]
 })
 export class InstitutionalBeneficiaryComponent {
 
-  isInstitutionList:boolean = true;
+  isInstitutionList:boolean = false;
   isInstitutionSelected:boolean=false;
-  isDonate:boolean=false;
+  isDonate:boolean=true;
   isPay:boolean=false;
 
   iconCards = [
