@@ -385,16 +385,34 @@
             <details class="group space-y-4">
               <summary
                 (mousedown)="selectDetails('visa', $event)"
-                class="bg-[#F3F7FDB8] rounded-lg p-4 flex gap-6 font-medium cursor-pointer list-none"
+                class="bg-[#F3F7FDB8] rounded-lg p-4 flex items justify-between font-medium cursor-pointer list-none"
               >
-                <div
-                  [ngClass]="{
-                    'border-4 border-headerBlue': selectedDetailsId === 'visa'
-                  }"
-                  class="border rounded-full w-6 h-6"
-                ></div>
-                <img src="../../../../assets/imgs/visa.webp" alt="card" />
-                <p>Airtel Money</p>
+                <div class="flex gap-6 w-52">
+                  <div
+                    [ngClass]="{
+                      'border-4 border-headerBlue': selectedDetailsId === 'visa'
+                    }"
+                    class="border rounded-full w-6 h-6"
+                  ></div>
+                  <img
+                    src="../../../../assets/imgs/card-visa.webp"
+                    alt="card"
+                  />
+                  <p>Airtel Money</p>
+                </div>
+
+                <div class="flex item gap-6">
+                  <img
+                    class="w-4 h-4"
+                    src="../../../../assets/imgs/visa-1.webp"
+                    alt="card"
+                  />
+                  <img
+                    class="w-4 h-4"
+                    src="../../../../assets/imgs/visa.webp"
+                    alt="card"
+                  />
+                </div>
               </summary>
 
               <div class="space-y-4">
