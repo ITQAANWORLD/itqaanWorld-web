@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from 'src/app/shared/components/footer/footer.component';
 import { InfoContainerComponent } from 'src/app/shared/components/info-container/info-container.component';
@@ -11,7 +11,7 @@ import { ItqaanServiceCardComponent } from 'src/app/shared/components/itqaan-ser
   templateUrl: './itqaan-zakaat.component.html',
   styleUrls: ['./itqaan-zakaat.component.scss']
 })
-export class ItqaanZakaatComponent {
+export class ItqaanZakaatComponent implements OnInit {
   aboutItems = [
     {
         title: 'WHAT IS ZAKAAT?',
@@ -29,4 +29,35 @@ export class ItqaanZakaatComponent {
     },
    
   ];
+
+  details:any
+  
+  // @ts-ignore
+  selectedDetailsId: string = null;
+
+  selectDetails(detailsId: string, event:Event) {
+    event.preventDefault();
+    if (this.selectedDetailsId === detailsId) {
+      // @ts-ignore
+      this.selectedDetailsId = null; // Close the currently opened details
+    } else {
+      this.selectedDetailsId = detailsId; // Open the clicked details
+    }
+  }
+
+  ngOnInit() {
+    this.details = document.querySelectorAll("details");
+    // Add the onclick listeners.
+    this.details.forEach((targetDetail:any) => {            
+        targetDetail.addEventListener("click", () => {
+        // Close all the details that are not targetDetail.
+        this.details.forEach((detail:any) => {
+            if (detail !== targetDetail) {
+            detail.removeAttribute("open");
+            }
+        });
+        });
+    });
+}
+
 }

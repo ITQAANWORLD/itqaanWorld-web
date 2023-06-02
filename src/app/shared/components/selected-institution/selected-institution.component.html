@@ -230,7 +230,7 @@
 
 <!-- Donate Modal-->
 <input type="checkbox" id="paymentModal" class="modal-toggle" />
-<label class="modal modal-bottom sm:modal-middle">
+<label for="paymentModal" class="modal modal-bottom sm:modal-middle">
   <div class="modal-box relative flex flex-col gap-4" for="">
     <label
       for="paymentModal"
@@ -274,7 +274,7 @@
           name="amount"
           id="donationAmount"
           placeholder="KES 0.00"
-          class="border p-2 rounded-xl font-bold appearance-none outline-none"
+          class="border p-4 rounded-xl font-bold appearance-none outline-none"
         />
       </div>
 
@@ -304,7 +304,7 @@
               <div class="space-y-4">
                 <p class="font-bold">Mobile Number</p>
                 <input
-                  type="number"
+                  type="tel"
                   name="phone"
                   id="phoneNumber"
                   placeholder="+254 123 456 789"
@@ -331,13 +331,14 @@
                 <p>Airtel Money</p>
               </summary>
               <p class="text-primaryWhite mt-3 group-open:animate-fade">
-                Enter your phone number below to donate with M-Pesa. You will
-                receive instructions from M-Pesa to complete your payment.
+                Enter your phone number below to donate with Airtel Money. You
+                will receive instructions from Airtel Money to complete your
+                payment.
               </p>
               <div class="space-y-4">
                 <p class="font-bold">Mobile Number</p>
                 <input
-                  type="number"
+                  type="tel"
                   name="phone"
                   id="phoneNumber"
                   placeholder="+254 123 456 789"
@@ -361,16 +362,16 @@
                   class="border rounded-full w-6 h-6"
                 ></div>
                 <img src="../../../../assets/imgs/tkash.webp" alt="mpesa" />
-                <p>Airtel Money</p>
+                <p>TKASH</p>
               </summary>
               <p class="text-primaryWhite mt-3 group-open:animate-fade">
-                Enter your phone number below to donate with M-Pesa. You will
-                receive instructions from M-Pesa to complete your payment.
+                Enter your phone number below to donate with TKASH. You will
+                receive instructions from TKASH to complete your payment.
               </p>
               <div class="space-y-4">
                 <p class="font-bold">Mobile Number</p>
                 <input
-                  type="number"
+                  type="tel"
                   name="phone"
                   id="phoneNumber"
                   placeholder="+254 123 456 789"
@@ -387,7 +388,7 @@
                 (mousedown)="selectDetails('visa', $event)"
                 class="bg-[#F3F7FDB8] rounded-lg p-4 flex items justify-between font-medium cursor-pointer list-none"
               >
-                <div class="flex gap-6 w-52">
+                <div class="flex gap-6 w-72">
                   <div
                     [ngClass]="{
                       'border-4 border-headerBlue': selectedDetailsId === 'visa'
@@ -398,7 +399,7 @@
                     src="../../../../assets/imgs/card-visa.webp"
                     alt="card"
                   />
-                  <p>Airtel Money</p>
+                  <p>Credit Card/Debit Card</p>
                 </div>
 
                 <div class="flex item gap-6">
@@ -442,21 +443,21 @@
 
                 <div class="grid grid-cols-4 gap-x-4">
                   <input
-                    type="text"
+                    type="number"
                     name="text"
                     id="cardNo"
                     placeholder="Card Number"
                     class="col-span-2 appearance-none border rounded-xl p-4"
                   />
                   <input
-                    type="text"
+                    type="number"
                     name="text"
                     id="cardExpr"
                     placeholder="MM/YY"
                     class="col-span-1 appearance-none border rounded-xl p-4"
                   />
                   <input
-                    type="text"
+                    type="number"
                     name="text"
                     id="cardCvv"
                     placeholder="CVV"
@@ -494,9 +495,18 @@
       </div>
     </div>
 
+    <p class="w-full border-b py-4 font-bold">Your Donation</p>
+    <div class="flex items-center justify-between text-[#6F6E6E]">
+      <p>Total donated</p>
+      <p>KES 7000</p>
+    </div>
+
     <!-- donate button -->
-    <button class="w-full py-4 rounded-full text-white bg-headerBlue">
+    <label
+      for="paymentModal"
+      class="w-full py-4 text-center rounded-full text-white bg-headerBlue cursor-pointer"
+    >
       Donate Now
-    </button>
+    </label>
   </div>
 </label>
