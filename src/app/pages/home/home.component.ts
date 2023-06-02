@@ -14,61 +14,89 @@ export class HomeComponent {
   itqaanServices = [
     {
       img: '../../../assets/imgs/cash-waqf.svg',
-      title: 'cash waqf'
+      title: 'cash waqf',
+    route: 'cash-waqf'
+
     },
     {
       img: '../../../assets/imgs/sadaqah.svg',
-      title: 'sadaqa'
+      title: 'sadaqa',
+    route: 'itqaan-sadaqa'
+
     },
     {
       img: '../../../assets/imgs/zakaat.svg',
-      title: 'itqaan zakaat'
+      title: 'itqaan zakaat',
+    route: 'itqaan-zakaat'
+
     },
     {
       img: '../../../assets/imgs/p2p-loan.svg',
-      title: 'p2p loan'
+      title: 'p2p loan',
+    route: 'itqaan-p2p'
+
     },
     {
       img: '../../../assets/imgs/itqaan-pay.svg',
-      title: 'itqaan pay'
+      title: 'itqaan pay',
+    route: 'itqaan-pay'
+
     },
     {
       img: '../../../assets/imgs/takaful.svg',
-      title: 'takaful'
+      title: 'takaful',
+    route: 'itqaan-takful'
+
     },
     {
       img: '../../../assets/imgs/al-nisaa.svg',
-      title: 'al-nisaa'
+      title: 'al-nisaa',
+    route: 'al-nisaa'
+
     },
     {
       img: '../../../assets/imgs/halal-bnb.svg',
-      title: 'halal bnb'
+      title: 'halal bnb',
+    route: 'itqaan-bnb'
+
     },
     {
       img: '../../../assets/imgs/atfaal.svg',
-      title: 'atfaal'
+      title: 'atfaal',
+    route: 'atfaal'
+
     },
     {
       img: '../../../assets/imgs/pension.svg',
-      title: 'pension'
+      title: 'pension',
+    route: 'itqaan-pension'
+
     },
     {
       img: '../../../assets/imgs/hajj-umrah.svg',
-      title: 'hajj & umrah'
+      title: 'hajj & umrah',
+    route: 'itqaan-hajj'
+
     },
     {
       img: '../../../assets/imgs/transportation.svg',
-      title: 'transport'
+      title: 'transport',
+    route: 'itqaan-transportation'
+
     }
   ];
   itqaanFree = [
     {
       img: '../../../assets/imgs/cash-waqf.svg',
-      title: 'quran'
+      title: 'quran',
+      route: ''
+
     },
     {
       img: '../../../assets/imgs/cash-waqf.svg',
-      title: 'hadith'
+      title: 'hadith',
+      route: 'hadith'
+
     },
   ]
 

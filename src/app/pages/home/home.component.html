@@ -53,6 +53,7 @@
       <app-itqaan-service-card
         [img]="service.img"
         [title]="service.title"
+        [route]="'/services/' + service.route"
       ></app-itqaan-service-card>
     </ng-container>
   </div>
@@ -70,6 +71,7 @@
         <app-itqaan-service-card
           [img]="service.img"
           [title]="service.title"
+          [route]="service.route"
         ></app-itqaan-service-card>
       </ng-container>
     </div>
