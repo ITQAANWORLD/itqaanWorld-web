@@ -16,8 +16,8 @@ import { SelectedInstitutionComponent } from "../../../../../../shared/component
 export class InstitutionalBeneficiaryComponent {
 
   isInstitutionList:boolean = false;
-  isInstitutionSelected:boolean=false;
-  isDonate:boolean=true;
+  isInstitutionSelected:boolean=true;
+  isDonate:boolean=false;
   isPay:boolean=false;
 
   iconCards = [
