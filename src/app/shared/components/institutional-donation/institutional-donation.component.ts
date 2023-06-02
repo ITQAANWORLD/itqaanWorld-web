@@ -1,19 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from "../../../../../../shared/components/footer/footer.component";
-import { IconCardComponent } from "../../../../../../shared/components/icon-card/icon-card.component";
+import { SelectedInstitutionComponent } from "../selected-institution/selected-institution.component";
+import { InstitutionCardComponent } from "../institution-card/institution-card.component";
 import { RouterLink } from '@angular/router';
-import { InstitutionCardComponent } from "../../../../../../shared/components/institution-card/institution-card.component";
-import { SelectedInstitutionComponent } from "../../../../../../shared/components/selected-institution/selected-institution.component";
 
 @Component({
-    selector: 'app-institutional-beneficiary',
+    selector: 'app-institutional-donation',
     standalone: true,
-    templateUrl: './institutional-beneficiary.component.html',
-    styleUrls: ['./institutional-beneficiary.component.scss'],
-    imports: [CommonModule, FooterComponent, IconCardComponent, RouterLink, InstitutionCardComponent, SelectedInstitutionComponent]
+    templateUrl: './institutional-donation.component.html',
+    styleUrls: ['./institutional-donation.component.scss'],
+    imports: [CommonModule,  RouterLink, SelectedInstitutionComponent, InstitutionCardComponent]
 })
-export class InstitutionalBeneficiaryComponent {
+export class InstitutionalDonationComponent {
+@Input() title:string =''
 
   isInstitutionList:boolean = false;
   isInstitutionSelected:boolean=true;
@@ -81,5 +80,4 @@ export class InstitutionalBeneficiaryComponent {
 
     }
   }
-
 }
