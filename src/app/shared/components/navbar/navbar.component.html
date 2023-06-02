@@ -67,7 +67,7 @@
       <a class="peer px-5 py-8 hover:cursor-pointer"> Services </a>
       <!-- the menu here -->
       <div
-        class="hidden absolute mt-[694px] -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
+        class="hidden absolute mt-[685px] -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
       >
         <a
           *ngFor="let item of services"
@@ -84,7 +84,7 @@
       <a class="peer px-5 py-8 hover:cursor-pointer">QURAN & HADITH</a>
       <!-- the menu here -->
       <div
-        class="hidden absolute mt-48 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
+        class="hidden absolute mt-[185px] -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
       >
         <a
           *ngFor="let item of quranHadith"
@@ -158,7 +158,7 @@
       <a class="peer hover:cursor-pointer"> Services </a>
       <!-- the menu here -->
       <div
-        class="hidden absolute mt-6 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
+        class="hidden absolute mt-6 -ml-4 peer-hover:flex hover:flex w-full flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
       >
         <a
           *ngFor="let item of services"
@@ -172,12 +172,13 @@
       <a class="peer hover:cursor-pointer">QURAN & HADITH</a>
       <!-- the menu here -->
       <div
-        class="hidden absolute mt-6 -ml-4 peer-hover:flex hover:flex w-[250px] flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
+        class="hidden w-full absolute mt-6 -ml-4 peer-hover:flex hover:flex flex-col bg-white text-darkText divide-y-2 drop-shadow-lg"
       >
         <a
           *ngFor="let item of quranHadith"
           class="px-5 py-3 hover:bg-gray-200 capitalize"
-          >{{ item }}</a
+          [routerLink]="'quran/' + item.route"
+          >{{ item.title }}</a
         >
       </div>
     </li>
