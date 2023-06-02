@@ -29,11 +29,13 @@ export class ItqaanSadaqaComponent {
     },
     {
       img: './assets/imgs/mosque-icon.webp',
-      title: 'Sadaqa to Mosques & Others'
+      title: 'Sadaqa to Mosques & Others',
+      route:'sadaqa-beneficiary'
     },
     {
       img: './assets/imgs/waqf-beneficiary.webp',
-      title: 'Dial a sanda'
+      title: 'Dial a sanda',
+      route:'dial-a-sanda',
     },
   ];
 

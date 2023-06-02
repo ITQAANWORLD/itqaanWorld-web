@@ -12,6 +12,8 @@ import { ItqaanTransportationComponent } from "./components/itqaan-transportatio
 import { ItqaanZakaatComponent } from "./components/itqaan-zakaat/itqaan-zakaat.component";
 import { TakafulComponent } from "./components/takaful/takaful.component";
 import { CashwaqfInstitutionComponent } from "./components/cash-waqf/components/cashwaqf-istitution/cashwaqf-institution.component";
+import { SadaqaInstitutionComponent } from "./components/itqaan-sadaqa/components/sadaqa-institution/sadaqa-institution.component";
+import { DailASandaInstitutionComponent } from "./components/itqaan-sadaqa/components/dail-a-sanda-institution/dail-a-sanda-institution.component";
 
 export const SERVICES_ROUTES: Route[] = [
     {path: 'cash-waqf', component: CashWaqfComponent},
@@ -26,5 +28,7 @@ export const SERVICES_ROUTES: Route[] = [
     {path: 'itqaan-transportation', component: ItqaanTransportationComponent},
     {path: 'itqaan-zakaat', component: ItqaanZakaatComponent},
     {path: 'itqaan-takful', component: TakafulComponent},
-    {path: 'cash-waqf/institutional-beneficiary', component: CashwaqfInstitutionComponent}
+    {path: 'cash-waqf/institutional-beneficiary', component: CashwaqfInstitutionComponent},
+    {path: 'itqaan-sadaqa/sadaqa-beneficiary', component: SadaqaInstitutionComponent},
+    {path: 'itqaan-sadaqa/dial-a-sanda', component: DailASandaInstitutionComponent},
   ];
